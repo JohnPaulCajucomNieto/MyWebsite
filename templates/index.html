@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Your Profile</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>MY PROFILE</h1>
+    <div>
+    <img src="{{ url_for('static', filename='jp.png') }}" alt="Your Photo">
+    <h2>John Paul C. Nieto</h2>
+    <p>I'm a musician</p>
+    <ul>
+        <li><a href="{{ url_for('favorites') }}">FAVORITES</a></li>
+        <li><a href="{{ url_for('friends') }}">FRIENDS</a></li>
+        <li><a href="{{ url_for('family') }}">FAMILY</a></li>
+        </ul>
+    </div>
+</body>
+</html>
